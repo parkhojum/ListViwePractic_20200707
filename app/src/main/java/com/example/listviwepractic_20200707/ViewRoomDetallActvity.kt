@@ -21,7 +21,7 @@ class ViewRoomDetallActvity : BaseActivity() {
 
     override fun setValues() {
         val receivdRoom = intent.getSerializableExtra("room") as Room
-        receivdRoom.price
+
 
         priceTxt.text = receivdRoom.getFormattedPrice()
         descTxt.text = receivdRoom.description
