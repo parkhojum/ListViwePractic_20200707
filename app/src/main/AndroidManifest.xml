@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_wlrqkd"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewRoomDetallActvity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewRoomDetallActvity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

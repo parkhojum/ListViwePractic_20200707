@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.listviwepractic_20200707.datas.Room
 import kotlinx.android.synthetic.main.activity_view_room_detall_actvity.*
-import kotlinx.android.synthetic.main.room_list_item.*
-import kotlinx.android.synthetic.main.room_list_item.descTxt
 
 class ViewRoomDetallActvity : BaseActivity() {
 
