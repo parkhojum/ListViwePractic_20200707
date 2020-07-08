@@ -1,6 +1,8 @@
 package com.example.listviwepractic_20200707.datas
 
-class Room(val price:Int,val address:String,val floor:Int,val description:String) {
+import java.io.Serializable
+
+class Room(val price:Int,val address:String,val floor:Int,val description:String) : Serializable{
 
 fun getFormattedFloor():String{
     if (this.floor >= 1) {

@@ -1,5 +1,6 @@
 package com.example.listviwepractic_20200707
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.listviwepractic_20200707.adapters.RoomAdapter
@@ -20,6 +21,24 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+        
+        roomListViwe.setOnItemClickListener { parent, view, position, id ->
+            val clickedRoom = mRoomList[position]
+
+            //눌린 방의 정보를 상세화면에 전달
+
+
+
+            val myIntent = Intent(mContext,ViewRoomDetallActvity::class.java)
+
+            //putExtra로 방 정보 첨부 => 방데이터를 한꺼번에 첨부
+            myIntent.putExtra("room",clickedRoom)
+
+
+            startActivity(myIntent)
+
+        }
+
 
     }
 
